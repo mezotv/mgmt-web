@@ -1,0 +1,49 @@
+#reviews {
+  background-color: $secondaryBg;
+  height: 40vh;
+
+  h2 {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    padding-top: 8vh;
+    font-weight: 700;
+    color: $text;
+    font-size: 28px;
+    margin-left: 12vw;
+    margin-right: 12vw;
+
+    span {
+      color: $gray;
+    }
+  }
+
+  .review-slider {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-top: 24px;
+
+    .review {
+      h3 {
+        color: #fdf0d5;
+        font-weight: 500;
+        font-size: 20px;
+        user-select: none;
+      }
+
+      p {
+        color: #fdf0d5;
+        font-weight: 200;
+        font-size: 18px;
+        user-select: none;
+      }
+
+      h4 {
+        color: #fdf0d5;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 8px;
+        user-select: none;
+      }
+    }
+  }
+}

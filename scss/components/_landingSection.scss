@@ -1,0 +1,19 @@
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $mainBg;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: $gray;
+    text-align: center;
+
+    span {
+      color: $text;
+      font-weight: 800;
+    }
+  }
+}

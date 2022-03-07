@@ -1,0 +1,43 @@
+#info {
+  height: 80vh;
+
+  h2 {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    color: $text;
+    font-size: 28px;
+    font-weight: 700;
+
+    span {
+      color: $secondaryBg;
+    }
+  }
+
+  .content {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14vh;
+
+    .text {
+      margin-left: 12vw;
+
+      p {
+        color: $text;
+        font-weight: 300;
+        font-size: 19px;
+        width: 50vw;
+        margin-top: 6px;
+      }
+    }
+
+    .image {
+      margin-right: 12vw;
+      transform: translateY(-60px);
+    }
+  }
+
+  .waves {
+    z-index: 5;
+  }
+}

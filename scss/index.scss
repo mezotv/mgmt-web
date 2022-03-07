@@ -1,0 +1,74 @@
+// Util Imports
+@import './utils/vars';
+
+// Swiper
+:root {
+  --swiper-pagination-color: #fdf0d5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $mainBg;
+  overflow: overlay;
+  scroll-behavior: smooth;
+
+  // Scrollbar
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray;
+  }
+}
+
+.backToTopBtn {
+  border-radius: 3px;
+  background-color: $grayContrastHover;
+  position: fixed;
+  right: 50px;
+  bottom: 80px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+
+  i {
+    font-size: 24px;
+    color: #fdf0d5;
+    user-select: none;
+    padding: 12px;
+  }
+
+  &:hover {
+    background-color: $darkBg;
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+}
+
+// Component Imports
+@import './components/nav';
+@import './components/landingSection';
+@import './components/infoSection';
+@import './components/faqSection';
+@import './components/dashboard';
+@import './components/reviews';
+@import './components/footer';
